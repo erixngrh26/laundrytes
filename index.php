@@ -1,3 +1,14 @@
+<?php
+session_start();
+require_once "database.php";
+//Memanggil kelas database
+$pdo = new database();
+
+    //Memunculkan daftar harga
+    $rows = $pdo -> getHarga();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
